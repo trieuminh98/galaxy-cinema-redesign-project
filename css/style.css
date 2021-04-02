@@ -1,0 +1,151 @@
+/* Header */
+
+.header a {
+    color: #333;
+}
+
+.header .sign-up {
+    display: flex;
+    justify-self: flex-end;
+}
+
+.header .language {
+    padding: 0 10px;
+}
+
+.header .grid {
+    grid-template-columns: 60% 40%;
+}
+
+.header .grid>*:nth-child(2) {
+    justify-content: flex-end;
+}
+
+.header .flex {
+    justify-content: space-between;
+}
+
+.header img {
+    width: 55%;
+}
+
+.header input[type='text'] {
+    border: 1px solid #ced0da;
+    width: 225px;
+    height: 30px;
+}
+
+.header input::placeholder {
+    padding: 0 10px;
+    color: #bab0ae;
+}
+
+
+/* NavBar  */
+
+.navbar .flex {
+    justify-content: space-around;
+}
+
+.navbar .border-left {
+    flex: 1 1 auto;
+    position: relative;
+    text-align: center;
+    border: 0;
+    border-left: 1px solid #fff;
+}
+
+.navbar .border-none {
+    flex: 1 1 auto;
+    position: relative;
+    text-align: center;
+    border: 0;
+}
+
+
+/* Slide */
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+}
+
+.slideshow-container img {
+    height: 500px;
+}
+
+.slideshow-container .dot {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.slideshow-container .dot-section {
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+}
+
+.slideshow-container .book-form {
+    width: 350px;
+    height: 340px;
+    left: 70%;
+    top: 10%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    opacity: 1;
+    gap: 0px;
+    justify-content: flex-start;
+}
+
+.slideshow-container .book-form>*:not(:first-child) {
+    padding: 0 10px;
+}
+
+.book-form .book-header>*:first-child {
+    background-color: var(--third-color);
+}
+
+.book-form .book-header {
+    text-align: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 60% 40%;
+    gap: 0px;
+}
+
+.book-form .book-header h3 {
+    height: inherit;
+    padding-top: 10px;
+}
+
+.book-form .book-mode {
+    justify-content: space-between;
+    text-align: center;
+}
+
+.book-form .book-mode a {
+    padding: 5px;
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.book-form .book-mode a:hover {
+    border-bottom: 1px solid var(--third-color);
+}
+
+.dropdown-container {
+    height: 85%;
+    width: 100%;
+}
+
+.btn-container {
+    justify-self: end;
+}
+
+.btn-sell {
+    border-radius: 0%;
+    background-color: var(--third-color);
+}
