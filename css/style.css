@@ -128,12 +128,6 @@
 .book-form .book-mode a {
     padding: 5px;
     width: 100%;
-    border: 0;
-    border-bottom: 1px solid #fff;
-}
-
-.book-form .book-mode a:hover {
-    border-bottom: 1px solid var(--third-color);
 }
 
 .dropdown-container {
@@ -147,5 +141,114 @@
 
 .btn-sell {
     border-radius: 0%;
+    background-color: var(--third-color);
+}
+
+.movie-showcase-header {
+    font-weight: 500;
+    color: var(--fourth-color);
+}
+
+.movie-showcase-header .container {
+    padding: 0;
+}
+
+.movie-showcase-header .movie-home .grid-cl {
+    gap: 0;
+    justify-content: start;
+}
+
+.movie-showcase-header .movie-home ul>*:nth-child(3) {
+    color: #fff;
+}
+
+.movie-showcase-header .movie-home li {
+    padding: 15px;
+}
+
+.movie-showcase-header .movie-home li a {
+    color: var(--fourth-color);
+}
+
+.movie-showcase-header .movie-home li a:hover {
+    color: #333;
+}
+
+.movie-showcase-header .movie-home .border-bottom {
+    border-bottom: 2px solid var(--shallow-dark);
+}
+
+.movie-showcase-header .movie-home .border-bottom:hover:nth-child(-n+2) {
+    border-bottom: 2px solid var(--third-color);
+}
+
+.movie-showcase-header .hot-news-icon {
+    display: inline-block;
+    width: 148px;
+    height: 55px;
+    vertical-align: middle;
+}
+
+.movie-showcase-header .hot-news-description {
+    display: inline-block;
+}
+
+.movie-showcase-card .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.movie-showcase-card .container {
+    max-width: 1365px;
+    overflow: hidden;
+}
+
+.movie-showcase-card img {
+    width: 100%;
+    height: 82%;
+    cursor: pointer;
+}
+
+.movie-showcase-card .book-film {
+    position: absolute;
+    top: 20px;
+    height: 73.1%;
+    width: 90.9%;
+    opacity: 0;
+}
+
+.movie-showcase-card .book-film button {
+    position: relative;
+    top: 40%;
+    left: 35%;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    height: 43px;
+    width: 122px;
+}
+
+.movie-showcase-card .book-film span {
+    position: relative;
+    top: 30%;
+    left: 46%;
+}
+
+.movie-showcase-card .book-film:hover {
+    opacity: 1;
+    background-color: var(--shallow-dark);
+}
+
+.movie-showcase-card .film-description-vi {
+    color: var(--fourth-color);
+}
+
+.movie-showcase-card .btn-read-more {
+    margin: 0px 77px;
+    float: right;
+    color: var(--third-color);
+    border: 2px solid var(--third-color);
+}
+
+.movie-showcase-card .btn-read-more:hover {
+    color: #fff;
     background-color: var(--third-color);
 }

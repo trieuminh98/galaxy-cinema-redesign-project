@@ -6,6 +6,8 @@
     --light-color: #f4f4f4;
     --success-color: #5cb85c;
     --error-color: #d9534f;
+    --fourth-color: rgba(160, 163, 167, 0.8);
+    --shallow-dark: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -63,7 +65,6 @@ pre {
 .container {
     max-width: 1325px;
     margin: 0 auto;
-    overflow: auto;
     padding: 0 40px;
 }
 
@@ -74,6 +75,16 @@ pre {
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin: 10px;
+}
+
+.task-card {
+    position: relative;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 10px;
+    height: 370px;
+    width: 438px;
 }
 
 .btn {
@@ -102,6 +113,15 @@ pre {
     color: #fff;
 }
 
+.border-bottom {
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.border-bottom:hover {
+    border-bottom: 1px solid var(--third-color);
+}
+
 
 /* Backgrounds & colored buttons */
 
@@ -114,6 +134,12 @@ pre {
 .bg-secondary,
 .btn-secondary {
     background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.bg-third,
+.btn-third {
+    background-color: var(--third-color);
     color: #fff;
 }
 
@@ -232,6 +258,16 @@ pre {
     height: 100%;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
 .grid-cl {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -243,6 +279,10 @@ pre {
 
 .grid-cl-3 {
     grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-cl-4 {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .grid-cl-1 {
